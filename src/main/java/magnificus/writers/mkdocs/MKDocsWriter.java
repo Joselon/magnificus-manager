@@ -41,7 +41,7 @@ public class MKDocsWriter extends Writer {
         try {
             Codigus codigus = new Codigus();
             MKDocsWriter mkDocsWriter = new MKDocsWriter("../magnificus-mkdocs");
-            codigus.accept(null);
+            codigus.accept(mkDocsWriter);
             // mkDocsWriter.create(codigus);
             Console.instance().writeln("testCase");
             Console.close("testCase");
